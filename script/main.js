@@ -1,6 +1,6 @@
 // Import the data to customize and insert them into page
 window.addEventListener('DOMContentLoaded', (event) => {
-  var audio = new Audio('Song.mp3');
+  var audio = new Audio('https://github.com/Jaswanthnani02/birthday-wish-master/blob/main/Song.mp3');
   audio.play();
 });
 const fetchData = () => {
