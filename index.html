@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<body>
+  <button id="playButton">Play Song</button>
+  <script>
+    var audio = new Audio('Song.mp3'); // Update this with the actual path to your song file
 
+    document.getElementById('playButton').addEventListener('click', function() {
+      audio.play();
+    });
+  </script>
+</body>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
