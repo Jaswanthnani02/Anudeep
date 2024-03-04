@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
-  <button id="playButton">Play Song</button>
-  <script>
-    var audio = new Audio('Song.mp3'); // Update this with the actual path to your song file
+<audio id="myAudio" loop>
+  <source src="Song.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<script>
+  var audio = document.getElementById("myAudio");
 
-    document.getElementById('playButton').addEventListener('click', function() {
-      audio.play();
-    });
-  </script>
-</body>
+  function playSong() {
+    audio.play();
+  }
+
+  function pauseSong() {
+    audio.pause();
+  }
+</script>
+<button onclick="playSong()">Play Song</button>
+<button onclick="pauseSong()">Pause Song</button>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
